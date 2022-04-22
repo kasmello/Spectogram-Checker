@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'whale_statistics'
+    'whale_statistics',
+    'image_viewer'
 ]
 
 MIDDLEWARE = [
