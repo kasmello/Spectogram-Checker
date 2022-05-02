@@ -9,3 +9,5 @@ def say_hello(request):
 def show_stats(request):
     context = {'Text':'waow'}
     return render(request, 'whale_statistics.html', context)
+
+#this is a test
