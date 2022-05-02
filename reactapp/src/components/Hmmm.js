@@ -6,9 +6,7 @@ const Hmmm = () => {
     alert('GAWW')
   }
   return (
-    <div className = "btn">
-      <button onClick={sayDaw}>PRESS ME</button>
-    </div>
+    <button className = "btn" onClick={sayDaw}>PRESS ME</button>
   )
 
 }

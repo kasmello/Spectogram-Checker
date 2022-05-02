@@ -5,17 +5,20 @@ import PropTypes from 'prop-types';
 const Header = (props) => {
   return (
     <header className="header">
-      <h1 style = {{color: 'red', backgroundColor: 'black'}}>{props.title}</h1>
+      <h1>{props.title}</h1>
+      <p>{props.description}</p>
     </header>
   )
 }
 
 Header.defaultProps = {
-  title: "YO"
+  title: "CheckMyWhaley!",
+  description: "Help me check my Humpback Whale calls!"
 }
 
 Header.propTypes = { 
-  title: PropTypes.string.isRequired
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string
 }
 
 export default Header;

@@ -3,24 +3,24 @@ import PropTypes from 'prop-types';
 
 
 
-const Button = ({text}) => {
-    function changeButtonText({text}) {
-        alert({text});
+const Button = (props) => {
+    function changeButtonText(text) {
+        alert(text);
 
     
     }
     return(
-        <button className='btn' onClick = {changeButtonText}>{text}</button>
+        <button className='btn' onClick={() => changeButtonText(props.text)}>{props.text}</button>
 
     )
 }
 
 Button.defaultProps = {
     text: "NA"
-}
+};
 
 Button.propTypes = { //needs default prop!
     text: PropTypes.string.isRequired
-}
+};
 
 export default Button;
