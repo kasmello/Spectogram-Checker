@@ -8,7 +8,7 @@ import React from 'react';
 const App = () => {
   return (
     <div className='container'>
-      <Header title='HELLO MATE'/>
+      <Header />
       <Hmmm />
       <WelcomeDialog />
     </div>
