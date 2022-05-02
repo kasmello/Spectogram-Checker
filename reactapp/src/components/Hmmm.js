@@ -1,3 +1,6 @@
+import React from 'react';
+
+
 const Hmmm = () => {
   function sayDaw() {
     alert('GAWW')

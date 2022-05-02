@@ -1,16 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
-import Header from './components/Header'
-import Hmmm from './components/hmmm'
+import Header from './components/Header';
+import Hmmm from './components/hmmm';
+import WelcomeDialog from './components/WelcomeDialog';
+import React from 'react';
 
-function App() {
+
+const App = () => {
   return (
     <div className='container'>
-      <Header />
+      <Header title='HELLO MATE'/>
       <Hmmm />
+      <WelcomeDialog />
     </div>
   )
 }
 
 
 export default App;
+
