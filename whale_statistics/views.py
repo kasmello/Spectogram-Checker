@@ -11,3 +11,4 @@ def show_stats(request):
     return render(request, 'whale_statistics.html', context)
 
 #this is a test
+#another test
