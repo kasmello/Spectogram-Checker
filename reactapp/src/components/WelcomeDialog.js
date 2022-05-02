@@ -1,13 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Button from './WelcomeDialog';
 
 
 const WelcomeDialog = () => {
     return (
         <div style = {dialogStyle} className = "container">
             <header className = 'header'>WELCOME! WHAT WOULD YOU LIKE TO DO?</header>
-            <button className = 'btn'>Look at whale statistics</button>
-            <button className = 'btn'>Mark some whales</button>
+            <Button text="Look at statistics" />
+            <Button text="Check the whales" />
         
         </div>
     )
