@@ -1,6 +1,13 @@
+from tkinter import Image
 from django.shortcuts import render
 from django.http import HttpResponse
-from image_viewer.models import image_data
+from .models import image_data
+from rest_framework import generics
+from .serializers import ImageSerializer
+
+class ImageViewer(generics.CreateAPIView):
+    queryset = image_data.objects.all()
+    serializer_class = ImageSerializer
 
 # Create your views here.
 def image_viewer(request):

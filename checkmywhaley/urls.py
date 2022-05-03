@@ -19,7 +19,8 @@ from django.views.generic import TemplateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', TemplateView.as_view(template_name='index.html')),
+    # path('', include('api.urls')),
     path('whale_statistics/', include('whale_statistics.urls')),
-    path('image_viewer/', include('image_viewer.urls'))
+    path('image_viewer/', include('image_viewer.urls')),
+    path('', TemplateView.as_view(template_name='index.html')),
 ]

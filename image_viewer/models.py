@@ -1,11 +1,16 @@
 from django.db import models
 
-# Create your models here.
+def grab_least_checked():
+    return_model = image_data.objects.order_by('check_count').first()
+    return return_model.url, return_model.label
+
 class image_data(models.Model):
-    id = models.AutoField(primary_key=True)
-    url = models.TextField()
+    url = models.TextField(unique=True)
     width = models.IntegerField()
     height = models.IntegerField()
     label = models.TextField()
-    class Meta:
-        db_table = "image_data"
+    check_count = models.IntegerField(default=0)
+    
+
+
+
